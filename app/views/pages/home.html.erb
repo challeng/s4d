@@ -1,0 +1,46 @@
+<h1> #Sires4Dota </h1>
+
+<br/>
+
+<h2>Leaderboards</h2>
+
+
+<div class="leaderboards">
+
+	<div class="leaderboard">
+		<h3>Most Games</h3>
+		<div class="clear"></div>
+
+		<% @sorted_game_count.each do |game_count| %>
+		<p>
+	  		<%= game_count[0] %> 
+	  	  	<strong><%= game_count[1] %> </strong>
+			<% end %>
+		</p>
+	</div>
+
+	<div class="leaderboard">
+		<h3>Most Wins</h3>
+		<div class="clear"></div>
+
+
+	</div>
+
+	<div class="leaderboard">
+		<h3>Most Losses</h3>
+		<div class="clear"></div>
+
+
+	</div>
+
+	<div class="leaderboard">
+		<h3>Highest W/L Ratio</h3>
+		<div class="clear"></div>
+
+
+	</div>
+</div>
+
+
+<%= @sorted_games %>
+
